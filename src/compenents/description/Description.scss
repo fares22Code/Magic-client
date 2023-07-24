@@ -1,0 +1,101 @@
+.description .features {
+  background-color: #f1fdf7;
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  width: 85%;
+  border-radius: 6px;
+  padding: 100px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.description .features.dark {
+  background-color: #0d084d;
+}
+
+.description .features.dark h1 {
+  color: white !important;
+}
+
+.description .features.dark i {
+  font-weight: 300;
+}
+
+.description .features.dark p {
+  margin-bottom: 20px;
+  color: white !important;
+}
+
+.description .features.dark .title {
+  color: white !important;
+  font-weight: 300 !important;
+  font-size: 14px !important;
+}
+
+.description .features .container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 50px;
+}
+
+.description .features .container .item {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.description .features .container .item:first-child {
+  flex: 2;
+}
+
+.description .features .container .item:last-child {
+  flex: 3;
+}
+
+.description .features .container .item img {
+  width: 100%;
+}
+
+.description .features .container .item h1 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.description .features .container .item .title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #666;
+}
+
+.description .features .container .item .title img {
+  width: 24px;
+  height: 24px;
+}
+
+.description .features .container .item p {
+  font-size: 18px;
+  font-weight: 300;
+  color: gray;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.description .features .container .item video {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .description .features {
+    flex-direction: column;
+  }
+  
+  .description .features .container {
+    padding: 50px;
+  }
+}

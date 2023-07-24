@@ -1,0 +1,117 @@
+.register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register form {
+  width: 100%;
+  max-width: 960px;
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.register form h1 {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.register form .free {
+  color: #1dbf73;
+  margin-bottom: 20px;
+}
+
+.register form .left,
+.register form .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.register form label {
+  color: gray;
+  font-size: 18px;
+}
+
+.register form input,
+.register form textarea,
+.register form .form-select {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid rgb(216, 214, 214);
+}
+
+.register form button {
+  border: none;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: #1dbf73;
+  cursor: pointer;
+}
+
+.register form .form-select {
+  padding: 8px;
+  background-color: gainsboro;
+}
+
+.register form .toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.register form .toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+
+.register form .toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.register form .toggle .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.register form .toggle .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.register form .toggle input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.register form .toggle input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.register form .toggle input:checked + .slider:before {
+  transform: translateX(26px);
+}

@@ -1,0 +1,104 @@
+
+.orders {
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+}
+
+.orders .container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 40px 0px;
+}
+
+.orders .container .title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.orders .container .title button {
+  background-color: #1dbf73;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.orders .container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.orders .container table tr {
+  height: 50px;
+}
+
+.orders .container table th {
+  text-align: left;
+}
+
+.orders .container table td {
+  padding: 5px;
+
+  sup {
+    font-size: 12px;
+  }
+
+  .image {
+    width: 50px;
+    height: 25px;
+    object-fit: cover;
+  }
+
+  .message {
+    width: 30px;
+    cursor: pointer;
+  }
+
+  .emojies {
+    width: 60px;
+  }
+}
+
+.orders .container table tr:nth-child(even) {
+  background-color: #1dbf730f;
+}
+
+
+.closed-row {
+  background-color: #f2f2f2;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+
+select {
+  width: 150px;
+  padding: 4px;
+  align-self: flex-end;
+  background-color: bisque;
+  border-radius: 20pt;
+}
+
+@media screen and (max-width: 768px) {
+  .orders {
+    flex-direction: column;
+  }
+
+  .orders .container {
+    width: 100%;
+    padding: 20px 0px;
+  }
+
+  .orders .container .title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orders .container .title button {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,98 @@
+.myServices {
+  display: flex;
+  justify-content: center;
+  color: #555;
+
+  .container {
+    width: 1250px;
+    padding: 50px 0px;
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        background-color: #1dbf73;
+        color: white;
+        font-weight: 500;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+    }
+
+    table {
+      width: 100%;
+
+      tr {
+        height: 60px;
+        th {
+          text-align: left;
+          color: blue;
+          
+        }
+        td {
+          
+          
+          sup{
+            font-size: 12px;
+            font-weight: bold;
+          }
+          
+          .image {
+            width: 50px;
+            height: 25px;
+            object-fit: cover;
+          }
+
+          .delete {
+            width: 20px;
+            cursor: pointer;
+          }
+          
+
+        }
+        &:nth-child(even) {
+          background-color: #1dbf730f;
+        }
+      }
+    }
+  }
+}
+.status-available {
+  color: green;
+}
+
+.status-not-available {
+  color: red;
+}
+.service-title {
+  color: black;
+}
+  
+.change-button {
+  background-image: url("/img/delete.png");
+
+  width: 25px;
+   cursor: pointer;
+   background-color: transparent;
+  
+}
+
+
+@media screen and (max-width: 768px) {
+  .myServices .container .title {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .myServices .container .title button {
+    margin-top: 10px;
+  }
+
+  .myServices .container table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

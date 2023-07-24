@@ -1,0 +1,68 @@
+.marketplace {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px;
+}
+
+.marketplace .container {
+  width: 100%;
+  max-width: 1300px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.marketplace h1 {
+  color: #555;
+  text-align: center;
+}
+
+.marketplace .items {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.marketplace .items .item {
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.marketplace .items .item img {
+  width: 50px;
+  height: 50px;
+}
+
+.marketplace .items .item .line {
+  width: 50px;
+  height: 2px;
+  background-color: lightgray;
+  transition: all 0.3s ease;
+}
+
+.marketplace .items .item span {
+  font-weight: 300;
+}
+
+.marketplace .items .item:hover .line {
+  width: 80px;
+  background-color: #1dbf73;
+}
+
+@media (max-width: 768px) {
+  .marketplace .container {
+    padding: 0 20px;
+  }
+
+  .marketplace .items .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
